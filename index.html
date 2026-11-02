@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wildlife Shepherds: conservación, protección y cuidado responsable de la fauna silvestre y los psitácidos en la región de Puerto Vallarta y Bahía de Banderas.">
+  <meta name="theme-color" content="#173b28">
+  <title>Wildlife Shepherds | Cada vida importa</title>
+  <style>
+    :root{--forest:#173b28;--leaf:#347b3f;--lime:#d5e83d;--cream:#f7f6ef;--ink:#18251d;--muted:#5e6a60;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+    a{color:inherit}img{display:block;max-width:100%}.container{width:min(1140px,92%);margin:auto}
+    .topbar{background:var(--forest);color:#fff;font-size:.86rem;padding:.55rem 0}.topbar .container{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+    header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 18px #142b1b12}.nav{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:1.2rem}
+    .brand{display:flex;align-items:center;gap:.75rem;text-decoration:none;font-weight:800;color:var(--forest);letter-spacing:.02em}.brand img{width:88px;height:62px;object-fit:contain}.brand span{max-width:180px;line-height:1.1}
+    nav{display:flex;gap:1.15rem;align-items:center;flex-wrap:wrap}nav a{text-decoration:none;font-size:.92rem;font-weight:700;color:#35473a}nav a:hover{color:var(--leaf)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--lime);color:#17251a;text-decoration:none;font-weight:800;border-radius:999px;padding:.85rem 1.25rem;border:0;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px);background:#e2f15c}.btn.dark{background:var(--forest);color:#fff}.btn.outline{background:transparent;border:2px solid #fff;color:#fff}
+    .hero{position:relative;min-height:590px;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,rgba(8,27,16,.88),rgba(8,27,16,.47) 58%,rgba(8,27,16,.12)),url('assets/mural-guacamayas.jpg') center 43%/cover no-repeat}
+    .hero-content{padding:5.5rem 0;max-width:720px}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:800;color:var(--lime)}h1,h2,h3{line-height:1.12;margin-top:0}h1{font-size:clamp(2.7rem,6vw,5.5rem);margin:.8rem 0 1.2rem;letter-spacing:-.04em}h1 span{color:var(--lime)}.hero p{font-size:clamp(1.05rem,2vw,1.25rem);max-width:610px;color:#f2f4ed}.actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.7rem}
+    section{padding:5rem 0}.section-head{max-width:730px;margin-bottom:2.2rem}.section-head h2{font-size:clamp(2rem,4vw,3.25rem);color:var(--forest);margin:.45rem 0 1rem}.section-head p{color:var(--muted);font-size:1.06rem}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}.about-image{position:relative}.about-image img{height:470px;width:100%;object-fit:cover;border-radius:24px}.image-note{position:absolute;bottom:18px;left:18px;background:var(--lime);padding:1rem 1.2rem;border-radius:14px;font-weight:800;max-width:220px}.checklist{padding:0;list-style:none}.checklist li{padding:.55rem 0 .55rem 2rem;position:relative}.checklist li:before{content:"✓";position:absolute;left:0;color:var(--leaf);font-weight:900;font-size:1.2rem}
+    .programs{background:#e9eee5}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}.card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 10px 30px #1d3b2410}.card img{width:100%;height:225px;object-fit:cover}.card-body{padding:1.45rem}.card h3{color:var(--forest);font-size:1.35rem;margin-bottom:.65rem}.card p{color:var(--muted);margin-bottom:0}
+    .banner{background:var(--forest);color:#fff}.banner-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}.banner h2{font-size:clamp(2rem,4vw,3.3rem);margin:.5rem 0 1rem}.banner p{color:#dce6db}.help-list{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}.help-item{border:1px solid #ffffff35;padding:1rem;border-radius:14px}.help-item strong{display:block;color:var(--lime);margin-bottom:.25rem}.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.gallery-grid a{overflow:hidden;border-radius:16px;background:#dfe7d8}.gallery-grid img{width:100%;height:230px;object-fit:cover;transition:transform .3s}.gallery-grid a:hover img{transform:scale(1.05)}
+    .education{display:grid;grid-template-columns:.85fr 1.15fr;gap:3rem;align-items:center}.education-visual img{width:100%;height:420px;object-fit:cover;border-radius:24px}.contact{background:#e9eee5}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}.contact-panel{background:#fff;padding:2rem;border-radius:20px}.contact-panel h3{font-size:1.4rem;color:var(--forest)}.contact-line{margin:1rem 0;color:var(--muted)}.contact-line strong{display:block;color:var(--ink)}.notice{font-size:.88rem;color:var(--muted);background:#f5f5ef;padding:1rem;border-radius:12px}
+    footer{background:#10291b;color:#d9e4d9;padding:2.5rem 0}footer .foot{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap}footer img{width:100px;max-height:70px;object-fit:contain}footer p{margin:.35rem 0;font-size:.9rem}.small{font-size:.82rem;color:#b9c9ba}
+    @media(max-width:850px){.nav{padding:1rem 0;align-items:flex-start}.nav,nav{flex-wrap:wrap}nav{gap:.8rem}.about-grid,.banner-grid,.education,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-columns:repeat(2,1fr)}.hero{min-height:560px}.about-image img{height:360px}}
+    @media(max-width:560px){.topbar .container{justify-content:center}.brand img{width:68px}.brand span{font-size:.9rem}.nav{gap:.8rem}nav{width:100%;font-size:.85rem}.hero{min-height:540px;background-position:58% center}.hero-content{padding:4rem 0}section{padding:3.5rem 0}.cards{grid-template-columns:1fr}.help-list{grid-template-columns:1fr}.gallery-grid img{height:170px}.about-image img,.education-visual img{height:300px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>Conservación y respeto por la vida silvestre</span><span>Puerto Vallarta · Bahía de Banderas</span></div></div>
+  <header><div class="container nav">
+    <a class="brand" href="#inicio"><img src="assets/logo-wls.jpg" alt="Logotipo de Wildlife Shepherds"><span>WILDLIFE<br>SHEPHERDS</span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#nosotros">Quiénes somos</a><a href="#programas">Programas</a><a href="#ayudar">Cómo ayudar</a><a href="#galeria">Galería</a><a href="#contacto">Contacto</a>
+    </nav>
+  </div></header>
+  <main>
+    <section class="hero" id="inicio"><div class="container"><div class="hero-content">
+      <div class="eyebrow">Conservación · Protección · Educación</div>
+      <h1>Cada vida importa.<br><span>Cada acción cuenta.</span></h1>
+      <p>Trabajamos por la protección de la fauna silvestre y la conservación de los psitácidos, promoviendo el respeto por la naturaleza y la participación de nuestra comunidad.</p>
+      <div class="actions"><a class="btn" href="#ayudar">Súmate a la causa</a><a class="btn outline" href="#nosotros">Conoce nuestra labor</a></div>
+    </div></div></section>
+
+    <section id="nosotros"><div class="container about-grid">
+      <div class="about-image"><img src="assets/guacamaya-primer-plano.jpeg" alt="Primer plano de una guacamaya verde"><div class="image-note">Proteger la vida silvestre es proteger nuestro futuro.</div></div>
+      <div><div class="eyebrow" style="color:var(--leaf)">Quiénes somos</div><div class="section-head"><h2>Compromiso con la fauna y su entorno</h2><p>Wildlife Shepherds es una asociación dedicada a la conservación y protección de la flora y fauna, con trabajo enfocado en la región de Puerto Vallarta, Cabo Corrientes y Bahía de Banderas.</p></div>
+      <p>Impulsamos una cultura de respeto por los animales silvestres y sus hábitats mediante acciones de cuidado, conservación y educación ambiental.</p>
+      <ul class="checklist"><li>Protección y atención responsable de fauna silvestre.</li><li>Conservación de guacamayas y otros psitácidos.</li><li>Educación ambiental para niñas, niños, jóvenes y comunidades.</li><li>Colaboración con personas, instituciones y empresas comprometidas.</li></ul>
+      </div>
+    </div></section>
+
+    <section class="programs" id="programas"><div class="container">
+      <div class="section-head"><div class="eyebrow" style="color:var(--leaf)">Nuestra labor</div><h2>Acciones para cuidar la vida</h2><p></p></div>
+      <div class="cards">
+        <article class="card"><img src="assets/guacas2.jpg" alt="Guacamayas verdes en un entorno con vegetación"><div class="card-body"><h3>Conservación de psitácidos</h3><p>Promovemos el conocimiento, la protección y la conservación de guacamayas, loros y otras aves de gran importancia ecológica.</p></div></article>
+        <article class="card"><img src="assets/guacas.jpg" alt="Loros verdes posados en ramas"><div class="card-body"><h3>Cuidado y protección</h3><p>La atención de la fauna requiere responsabilidad, conocimiento y compromiso con el bienestar de cada ejemplar.</p></div></article>
+        <article class="card"><img src="assets/colaboracion.jpg" alt="Tres loros en un espacio con plantas y troncos"><div class="card-body"><h3>Educación ambiental</h3><p>Compartimos conocimientos y experiencias para inspirar el respeto por los animales y la conservación de sus hábitats.</p></div></article>
+      </div>
+    </div></section>
+
+    <section class="banner" id="ayudar"><div class="container banner-grid">
+      <div><div class="eyebrow">Tu apoyo hace la diferencia</div><h2>La conservación es una tarea compartida.</h2><p>Personas, familias, escuelas y empresas pueden contribuir a fortalecer las acciones de protección de la fauna silvestre.</p><div class="actions"><a class="btn" href="#contacto">Quiero colaborar</a></div></div>
+      <div class="help-list"><div class="help-item"><strong>Donaciones</strong><span>Apoyo económico para las actividades de la organización.</span></div><div class="help-item"><strong>Donativos en especie</strong><span>Consulta qué materiales o insumos se necesitan actualmente.</span></div><div class="help-item"><strong>Voluntariado</strong><span>Pregunta por las oportunidades y requisitos de participación.</span></div><div class="help-item"><strong>Alianzas y patrocinios</strong><span>Construyamos colaboraciones con impacto positivo.</span></div></div>
+    </div></section>
+
+    <section id="galeria"><div class="container">
+      <div class="section-head"><div class="eyebrow" style="color:var(--leaf)">Galería</div><h2>Conoce a algunos de los ejemplares que inspiran nuestra labor</h2><p></p></div>
+      <div class="gallery-grid">
+        <a href="assets/mural-guacamayas.jpg" target="_blank" rel="noopener"><img src="assets/mural-guacamayas.jpg" alt="Ilustración de varias especies de guacamayas y loros"></a>
+        <a href="assets/aves-naranjas.jpg" target="_blank" rel="noopener"><img src="assets/aves-naranjas.jpg" alt="Aves de plumaje naranja y amarillo"></a>
+        <a href="assets/guacamayas-verdes.jpg" target="_blank" rel="noopener"><img src="assets/guacamayas-verdes.jpg" alt="Guacamayas verdes"></a>
+        <a href="assets/loros-verdes.jpg" target="_blank" rel="noopener"><img src="assets/loros-verdes.jpg" alt="Grupo de loros verdes"></a>
+        <a href="assets/loros-jardin.webp" target="_blank" rel="noopener"><img src="assets/loros-jardin.webp" alt="Tres loros en un espacio con plantas"></a>
+        <a href="assets/guacamaya-primer-plano.jpeg" target="_blank" rel="noopener"><img src="assets/guacamaya-primer-plano.jpeg" alt="Primer plano de una guacamaya verde"></a>
+        <a href="assets/loros-cabeza-amarilla.jpg" target="_blank" rel="noopener"><img src="assets/loros-cabeza-amarilla.jpg" alt="Loros de cabeza amarilla en un recinto"></a>
+        <a href="assets/turtles.jpg" target="_blank" rel="noopener"><img src="assets/turtles.jpg" alt="Conservación de vida silvestre"></a>
+		
+		<a href="assets/cacatua.webp" target="_blank" rel="noopener"><img align=top src="assets/cacatua.webp" alt="Cacatua disfrazada"></a>
+        <a href="assets/cabeza_azul.jpeg" target="_blank" rel="noopener"><img src="assets/cabeza_azul.jpeg" alt="Loro Cabeza Azul"></a>
+        <a href="assets/atoleros.jpeg" target="_blank" rel="noopener"><img src="assets/atoleros.jpeg" alt="Loros Verdes"></a>
+        <a href="assets/Shamrock.jpeg" target="_blank" rel="noopener"><img src="assets/Shamrock.jpeg" alt="guacamaya shamrock"></a>
+        <a href="assets/patagonio.jpg" target="_blank" rel="noopener"><img src="assets/patagonio.jpg" alt="Loro de la patagonia"></a>
+        <a href="assets/azules.jpg" target="_blank" rel="noopener"><img src="assets/azules.jpg" alt="Guacamayas Azul y Oro"></a>
+        <a href="assets/corona_lila.jpg" target="_blank" rel="noopener"><img src="assets/corona_lila.jpg" alt="Loro corona lila"></a>
+        <a href="assets/ala_verde.jpg" target="_blank" rel="noopener"><img src="assets/ala_verde.jpg" alt="Guacamaya Ala verde"></a>
+		
+      </div>
+    </div></section>
+
+    <section class="programs"><div class="container education">
+      <div class="education-visual"><img src="assets/aves-naranjas.jpg" alt="Aves en un espacio de cuidado"></div>
+      <div><div class="eyebrow" style="color:var(--leaf)">Educación y comunidad</div><h2 style="font-size:clamp(2rem,4vw,3.1rem);color:var(--forest)">El respeto por la naturaleza se aprende y se comparte.</h2><p>La educación ambiental ayuda a comprender el valor de la fauna silvestre y la importancia de conservar los ecosistemas. Podemos colaborar con escuelas, grupos comunitarios y organizaciones interesadas en impulsar una cultura de protección.</p><a class="btn dark" href="#contacto">Solicita información</a></div>
+    </div></section>
+
+    <section class="contact" id="contacto"><div class="container">
+      <div class="section-head"><div class="eyebrow" style="color:var(--leaf)">Contacto</div><h2>Hablemos de cómo ayudar</h2><p>Para conocer las formas de colaboración, actividades educativas o necesidades actuales, comunícate con Wildlife Shepherds.</p></div>
+      <div class="contact-grid">
+        <div class="contact-panel"><h3>Wildlife Shepherds</h3>
+          <div class="contact-line"><strong>Teléfono</strong><a href="tel:+523223846678">322 384 6678</a></div>
+          <div class="contact-line"><strong>Correo  </strong><a href="mailto:admin-wls@wildlife-shepherds.com">admin-wls@wildlife-shepherds.com</a></div>
+		  <div class="contact-line"><strong>Direcciónes</strong>Lago Ontario 270, Fluvial Vallarta<br>Puerto Vallarta, Jalisco, México<br>C.P. 48312
+		  <br> ----------------- <br>Zacatecas 253, Mojoneras<br>Puerto Vallarta, Jalisco, México<br>C.P. 48290
+		  </div>
+          <div class="actions"><a class="btn dark" href="https://www.facebook.com/wls.wildlife.shepherds/" target="_blank" rel="noopener">Visítanos en Facebook</a><a class="btn" href="https://wa.me/523223846678?text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20Wildlife%20Shepherds." target="_blank" rel="noopener">Contactar por WhatsApp</a></div>
+        </div>
+        <div class="contact-panel"><h3>¿Quieres colaborar?</h3><p>Escríbenos para consultar las necesidades actuales, los requisitos de voluntariado o las opciones de patrocinio y donación.</p><p class="notice"><a href="assets/logo-wls.jpg" target="_blank" rel="noopener"><img src="assets/logo-wls.jpg" alt="Logotipo de Wildlife Shepherds"></a></p></div>
+      </div>
+    </div></section>
+  </main>
+  <footer><div class="container foot"><div style="display:flex;align-items:center;gap:1rem"><img src="assets/logo-wls.jpg" alt="Wildlife Shepherds"><div><strong>Wildlife Shepherds</strong><p>Conservación, protección y respeto por la vida silvestre.</p></div></div><div><p>Puerto Vallarta · Jalisco · México</p><p class="small">© <span id="year"></span> Wildlife Shepherds. Todos los derechos reservados.</p></div></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
